@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="Logo">Ali B.</h2>
+        <nav class="navigation">
+        <a href="#">My Resume</a>
+        <a href="#">My Projects</a>
+        <a href="#">Contact</a>
+        <button class="btnLogin-popup">Create Resume</button>
+    </nav>    
+</header>
+
+<br>
+
+<h1>Milestone 3: Dynamic resume builder by Ali Bariz</h1>
+
+<div class="wrapper">
+    <span class="icon-close">
+        <box-icon name='x'></box-icon>
+    </span>
+    <form id="resumeform">
+            <h1>Personal Information</h1>
+            <div class="input-box">
+                <span class="icon">
+                    <box-icon name='id-card'></box-icon>
+                </span>
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name:</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon">
+                    <box-icon name='envelope' ></box-icon>
+                </span>
+                <input type="email" id="email" name="email" required>
+                <label for="name">Email:</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon">
+                    <box-icon name='phone'></box-icon>
+            </span>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="name">Phone:</label>
+            </div>
+             
+            
+            <h2>Education</h2>
+            <div class="input-box">
+                <span class="icon">
+                <box-icon name='book' ></box-icon>
+            </span>
+                <input type="text" id="education" name="edu" rows="4" required> 
+                <label for="name">Education:</label>
+            </div>
+             
+            
+            <h2>Experience</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <box-icon name='badge-check' ></box-icon>
+                </span>
+                <input type="text" id="experience" name="exp" rows="4" required>
+                <label for="name">Experience:</label>
+            </div> 
+             
+            <h2>Skills</h2>
+            <p>Seperate skills with comma*</p>
+            <div class="input-box">
+                <span class="icon">
+                    <box-icon name='brain'></box-icon>
+                </span>
+            <input type="text" id="skills" name="skills" rows="4" required>
+                <label for="name">Skills:</label>
+        </div>
+
+        <button class="btn-submit" type="submit">Generate Resume</button>
+    </form>
+</div>
+
+<div class="wrapper2">
+    <div id="resumeOutput">
+        <!-- resume will be generated here -->
+        <h1 class="resumeinfo">Personal Information</h1>
+  <div class="input-box3">
+  <h2 id="displayname"></h2>
+  <p id="displayemail"></p>
+  <p id="displayphone"></p>
+  </div>
+
+  <div class="input-box2">
+  <h2 class="resumeinfo">Education</h2>
+  <p id="displayeducation"></p><br>
+  </div>
+
+  <div class="input-box2">
+  <h2 class="resumeinfo">Experience</h2>
+  <p id="displayexperience"></p><br>
+  </div>
+
+  <div class="input-box2">
+  <h2 class="resumeinfo">Skills</h2>
+  <p id="displayskills"></p><br>
+  </div>
+
+</div>
+</div>
+
+
+<script src="index.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>
